@@ -1,6 +1,6 @@
 # bynico.tech · web
 
-Página de bynico.tech: webs y automatizaciones para pymes y emprendedores. Es el destino de todos los enlaces de Instagram (@bynicodev).
+Página de bynico.tech: webs y automatizaciones para pymes y emprendedores. Es el destino de todos los enlaces de Instagram (@bynico_tech).
 
 - Sitio estático sin build: `index.html`, `css/site.css`, `js/site.js`.
 - Marca: kit en `masters/kitMarca` (paleta Midnight & Champagne, Bodoni Moda + Manrope + JetBrains Mono).

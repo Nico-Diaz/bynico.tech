@@ -397,23 +397,23 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .faq details[open]::details-content { block-size: auto; }
 
-/* ── Cierre (champagne) ────────────────────── */
+/* ── Cierre (medianoche) ───────────────────── */
 .closing {
   position: relative; overflow: hidden;
-  background: var(--champagne);
-  color: var(--medianoche);
+  background: var(--medianoche);
+  color: var(--marfil);
   padding: clamp(96px, 16vh, 200px) var(--gutter);
 }
 .closing__inner { position: relative; max-width: calc(var(--maxw) - 2 * var(--gutter)); margin: 0 auto; }
 .closing__mark {
   position: absolute; right: 4vw; bottom: -0.18em;
   font: italic 400 clamp(20rem, 48vw, 46rem)/1 var(--f-display);
-  color: #CDB592;
+  color: var(--tinta);
   pointer-events: none; user-select: none;
 }
 .closing__mark b { font-weight: 400; }
 .closing__title { font: italic 400 clamp(3.5rem, 10vw, 9rem)/0.95 var(--f-display); letter-spacing: -0.02em; }
-.closing__text { margin-top: 28px; font-size: 1.2rem; max-width: 26em; }
+.closing__text { margin-top: 28px; font-size: 1.2rem; max-width: 26em; color: var(--bruma); }
 .closing .btn { margin-top: 40px; }
 
 /* ── Pie ───────────────────────────────────── */
