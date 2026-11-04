@@ -1,0 +1,14 @@
+{
+  "name": "bynico-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Web de bynico.tech: webs y automatizaciones para pymes",
+  "scripts": {
+    "assets": "node tools/build-assets.js",
+    "dev": "npx serve . -l 3000"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "sharp": "^0.33.5"
+  }
+}
