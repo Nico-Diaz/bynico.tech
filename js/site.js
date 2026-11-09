@@ -22,6 +22,23 @@
   // Entrada del hero
   requestAnimationFrame(() => requestAnimationFrame(() => root.classList.add('is-ready')));
 
+  // Bento: cada celda entra al llegar a la pantalla; las de una misma fila, escalonadas
+  const cells = [...document.querySelectorAll('.cell')];
+  if (reduced) {
+    cells.forEach((c) => c.classList.add('is-in'));
+  } else {
+    const ioCells = new IntersectionObserver((entries) => {
+      entries.filter((e) => e.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.left - b.boundingClientRect.left)
+        .forEach((e, i) => {
+          e.target.style.transitionDelay = `${i * 90}ms`;
+          e.target.classList.add('is-in');
+          ioCells.unobserve(e.target);
+        });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    cells.forEach((c) => ioCells.observe(c));
+  }
+
   // Chat: el momento principal. Pregunta → escribiendo… → respuesta automática, tres veces.
   const chat = document.getElementById('chat');
   const count = document.getElementById('chat-count');
@@ -72,14 +89,14 @@
       entries.forEach((e) => {
         if (e.isIntersecting) { e.target.classList.add('is-solved'); io.unobserve(e.target); }
       });
-    }, { rootMargin: '0px 0px -40% 0px', threshold: 0.6 });
+    }, { rootMargin: '0px 0px -30% 0px', threshold: 0.6 });
     problems.forEach((p) => io.observe(p));
   }
 
   // Botón flotante de WhatsApp (móvil): aparece tras el hero y se esconde en el cierre
   const float = document.querySelector('.float-wa');
-  const hero = document.querySelector('.hero');
-  const closing = document.querySelector('.closing');
+  const hero = document.querySelector('.cell--hero');
+  const closing = document.querySelector('.cell--close');
   const seen = new Map([[hero, true], [closing, false]]);
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => seen.set(e.target, e.isIntersecting));
