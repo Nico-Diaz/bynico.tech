@@ -144,10 +144,11 @@ figure { margin: 0; }
     "hero  hero  chat  mark"
     "hero  hero  chat  cta"
     "prob  prob  prob  prob"
-    "web   autom fit   fit"
+    "web   soft  autom video"
     "menui menui alm   alm"
     "menui menui mob   mob"
-    "proc  proc  proc  close"
+    "proc  proc  proc  proc"
+    "fit   fit   close close"
     "faq   faq   faq   faq";
 }
 .cell--hero  { grid-area: hero; }
@@ -156,7 +157,9 @@ figure { margin: 0; }
 .cell--cta   { grid-area: cta; }
 .cell--prob  { grid-area: prob; }
 .cell--web   { grid-area: web; }
+.cell--soft  { grid-area: soft; }
 .cell--auto  { grid-area: autom; } /* "auto" es palabra reservada en grid-area */
+.cell--video { grid-area: video; }
 .cell--fit   { grid-area: fit; }
 .cell--menui { grid-area: menui; }
 .cell--alm   { grid-area: alm; }
@@ -421,13 +424,13 @@ figure { margin: 0; }
       "chat  mark"
       "chat  cta"
       "prob  prob"
-      "web   autom"
-      "fit   fit"
+      "web   soft"
+      "autom video"
       "menui menui"
       "alm   alm"
       "mob   mob"
       "proc  proc"
-      "close close"
+      "fit   close"
       "faq   faq";
   }
   .cell--hero { min-height: 480px; }
@@ -457,12 +460,14 @@ figure { margin: 0; }
       "mark  cta"
       "prob  prob"
       "web   web"
+      "soft  soft"
       "autom autom"
-      "fit   fit"
+      "video video"
       "menui menui"
       "alm   alm"
       "mob   mob"
       "proc  proc"
+      "fit   fit"
       "close close"
       "faq   faq";
   }

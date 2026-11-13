@@ -54,14 +54,14 @@ function ico(pngs) {
   <rect x="824" y="40" width="336" height="300" rx="36" fill="${C.orq}"/>${simbolo(992, 180, 0.5, C.berenjena, C.crema)}
   <rect x="824" y="364" width="336" height="226" rx="36" fill="${C.lima}"/>
   <text x="864" y="452" font-family="Outfit" font-weight="700" font-size="44" fill="${C.berenjena}">Escríbeme</text>
-  <text x="864" y="500" font-family="Inter" font-weight="500" font-size="22" fill="${C.berenjena}">Webs y automatizaciones</text>
-  <text x="864" y="530" font-family="Inter" font-weight="500" font-size="22" fill="${C.berenjena}">para pymes · en remoto</text>
+  <text x="864" y="500" font-family="Inter" font-weight="500" font-size="22" fill="${C.berenjena}">Webs · software</text>
+  <text x="864" y="530" font-family="Inter" font-weight="500" font-size="22" fill="${C.berenjena}">automatización · video</text>
   ${simbolo(96, 116, 0.11, C.crema, C.orq)}
   <text x="128" y="128" font-family="Outfit" font-weight="700" font-size="30" fill="${C.crema}">bynico<tspan fill="${C.orq}">.</tspan><tspan font-weight="400" fill="${C.lavanda}">tech</tspan></text>
   <text font-family="Outfit" font-weight="700" font-size="84" fill="${C.crema}" letter-spacing="-1.6">
-    <tspan x="80" y="300">Webs que <tspan fill="${C.orq}">venden.</tspan></tspan>
-    <tspan x="80" y="390">Procesos que se</tspan>
-    <tspan x="80" y="480">hacen <tspan fill="${C.orq}">solos.</tspan></tspan>
+    <tspan x="80" y="300">Ideas <tspan fill="${C.orq}">reales.</tspan></tspan>
+    <tspan x="80" y="390">Soluciones</tspan>
+    <tspan x="80" y="480"><tspan fill="${C.orq}">digitales.</tspan></tspan>
   </text>
   <text x="80" y="546" font-family="JetBrains Mono" font-weight="500" font-size="20" fill="${C.lavanda}" letter-spacing="4">TECNOLOGÍA CON CRITERIO.</text>
 </svg>`;
